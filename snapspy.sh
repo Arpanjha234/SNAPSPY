@@ -1,4 +1,7 @@
-'#!/bin/bash
+#!/bin/bash
+# coded by: github.com/thelinuxchoice/saycheese
+# Modified by: github.com/kinghacker0/WishPhish
+# If you use any part from this code, giving me the credits. Read the Lincense!
 
 trap 'printf "\n";stop' 2
 
@@ -11,12 +14,11 @@ printf " \e[1;92m \___ \|  \| | / _ \ | |_) \___ \| |_) \ V /   \e[0m\n"
 printf " \e[1;92m  ___) | |\  |/ ___ \|  __/ ___) |  __/ | |    \e[0m\n"
 printf " \e[1;92m |____/|_| \_/_/   \_\_|   |____/|_|    |_|  \e[0m\n" 
                                              
-
-
-printf " \e[1;77m v1.1 CODED BY ARPANJHA \e[0m \n"
-
 printf "\n"
 
+ " \e[1;77m v1.1 CODED BY ARPANJHA \e[0m \n"
+
+printf "\n"
 
 }
 
