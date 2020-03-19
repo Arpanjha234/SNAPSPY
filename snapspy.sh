@@ -13,9 +13,9 @@ printf " \e[1;92m \___ \|  \| | / _ \ | |_) \___ \| |_) \ V /   \e[0m\n"
 printf " \e[1;92m  ___) | |\  |/ ___ \|  __/ ___) |  __/ | |    \e[0m\n"
 printf " \e[1;92m |____/|_| \_/_/   \_\_|   |____/|_|    |_|  \e[0m\n" 
                                              
-printf"\n"
+printf "\n"
 
- " \e[1;77m v1.0 CODED BY ARPANJHA \e[0m \n"
+ printf " \e[1;77m v1.0 CODED BY ARPANJHA \e[0m \n"
 
 printf "\n"
 
