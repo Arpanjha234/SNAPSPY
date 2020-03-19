@@ -1,7 +1,5 @@
-#!/bin/bash
-# coded by: github.com/thelinuxchoice/saycheese
-# Modified by: github.com/kinghacker0/WishPhish
-# If you use any part from this code, giving me the credits. Read the Lincense!
+
+
 
 trap 'printf "\n";stop' 2
 
