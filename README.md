@@ -3,7 +3,8 @@ BY USING THIS TOOL YOU CAN CAPTURE VICTIM SNAP (PHOTO) FROM HIS FRONT CAMERA BY 
 PLEASE DONT MISUSE IT. 
 IF ANY PART OF CODE THEN GIVE CREDIT TO ME.
 
-                                      STEPS TO INSTALL IT -:
+ # STEPS TO INSTALL IT -:
+   
    pkg install git
    
    apt install git
