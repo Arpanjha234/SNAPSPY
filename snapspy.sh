@@ -4,7 +4,8 @@
 trap 'printf "\n";stop' 2
 
 banner() {
-
+printf "\n"
+printf "\n"
 printf " \e[1;92m  ____  _   _    _    ____  ____  ______   __  \e[0m\n"
 printf " \e[1;92m / ___|| \ | |  / \  |  _ \/ ___||  _ \ \ / /  \e[0m\n"
 printf " \e[1;92m \___ \|  \| | / _ \ | |_) \___ \| |_) \ V /   \e[0m\n"
